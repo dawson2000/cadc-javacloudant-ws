@@ -1,0 +1,10 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: cadc-javacloudant-ws
+  host: cadc
+  disk_quota: 1024M
+  services:
+  - cadc-javacloudant-ws-cloudantNoSQLDB
