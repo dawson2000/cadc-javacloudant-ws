@@ -51,7 +51,7 @@ public class ResourceServlet {
 		String idString = id == null ? null : id.toString();
 		JsonObject resultObject = create(db, idString, name, value, null, null);
 
-		System.out.println("Create Successful.");
+		System.out.println("Create Successful.  12334");
 
 		return Response.ok(resultObject.toString()).build();
 	}
