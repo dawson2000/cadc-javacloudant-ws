@@ -41,9 +41,6 @@ public class ResourceServlet {
 			throws Exception {
 
 		Database db = null;
-		
-		
-		Database db2 = null;
 		try {
 			db = getDB();
 		} catch (Exception re) {
@@ -54,9 +51,7 @@ public class ResourceServlet {
 		String idString = id == null ? null : id.toString();
 		JsonObject resultObject = create(db, idString, name, value, null, null);
 
-
 		System.out.println("Create Successful.45678");
-
 
 		return Response.ok(resultObject.toString()).build();
 	}
