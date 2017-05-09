@@ -51,7 +51,7 @@ public class ResourceServlet {
 		String idString = id == null ? null : id.toString();
 		JsonObject resultObject = create(db, idString, name, value, null, null);
 
-		System.out.println("Create Successful.");
+		System.out.println("Create Successful.45678");
 
 		return Response.ok(resultObject.toString()).build();
 	}
@@ -75,6 +75,10 @@ public class ResourceServlet {
 			data.put("value", value);
 			data.put("creation_date", new Date().toString());
 			db.save(data);
+			
+			
+			System.out.println("I like citi");
+			System.out.println("I like citi");
 
 			// attach the attachment object
 			obj = db.find(HashMap.class, id);
@@ -101,7 +105,7 @@ public class ResourceServlet {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response get(@QueryParam("id") Long id, @QueryParam("cmd") String cmd) throws Exception {
-
+		System.out.println("I like citi");
 		Database db = null;
 		try {
 			db = getDB();
