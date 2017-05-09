@@ -8,9 +8,13 @@ package com.citi.gsr;
  *
  */
 public class BrMainApplication {
-	
-	public  BrMainApplication(){
-		 System.out.println("hello  BrMainApplication");
+
+	public BrMainApplication() {
+
+		System.out.println("hello  BrMainApplication");
+
+		System.out.println("I like citi");
+
 	}
 
 }
