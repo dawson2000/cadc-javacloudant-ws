@@ -29,12 +29,21 @@ public class CloudantClientMgr {
 					return;
 				}
 				cloudant = createClient();
+				
+				System.out.println("I like citi");
+				System.out.println("I like citi");
 
 			} // end synchronized
 		}
 	}
 
 	private static CloudantClient createClient() {
+		
+		
+		
+		System.out.println("I like citi");
+		
+		
 		// VCAP_SERVICES is a system environment variable
 		// Parse it to obtain the NoSQL DB connection info
 		String VCAP_SERVICES = System.getenv("VCAP_SERVICES");

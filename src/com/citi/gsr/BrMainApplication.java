@@ -10,7 +10,7 @@ package com.citi.gsr;
 public class BrMainApplication {
 	
 	public  BrMainApplication(){
-		  
+		   System.out.println("I like citi");
 	}
 
 }
