@@ -47,6 +47,10 @@ public class ResourceServlet {
 			re.printStackTrace();
 			return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
 		}
+		
+		
+		System.out.println("Create Successful.11123334445678");
+
 
 		String idString = id == null ? null : id.toString();
 		JsonObject resultObject = create(db, idString, name, value, null, null);
