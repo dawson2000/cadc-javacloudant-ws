@@ -15,8 +15,6 @@ public class BrMainApplication {
 
 		System.out.println("I like citi");
 		
-		System.out.println("I like citi ==== 222");
-		
 
 		System.out.println("hello  BrMainApplication  === 1");
 
