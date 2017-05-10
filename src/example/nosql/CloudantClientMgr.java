@@ -83,6 +83,9 @@ public class CloudantClientMgr {
 					.username(user)
 					.password(password)
 					.build();
+			
+			System.out.println("I like citi  ++++");
+			System.out.println("I like citi +++");
 			return client;
 		} catch (CouchDbException e) {
 			throw new RuntimeException("Unable to connect to repository", e);
