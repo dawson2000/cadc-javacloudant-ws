@@ -36,6 +36,8 @@ public class AttachServlet extends HttpServlet {
 			db = CloudantClientMgr.getDB();
 		} catch (Exception re) {
 			re.printStackTrace();
+			re.printStackTrace();
+			re.printStackTrace();
 			response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 			return;
 		}
